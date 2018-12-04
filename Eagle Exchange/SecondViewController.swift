@@ -20,7 +20,6 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buyerIndex = 1
         datas = Datas()
         
         title = "Search"

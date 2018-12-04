@@ -128,10 +128,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D5-uw-vBA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D5-uw-vBA">
                                                     <rect key="frame" x="20" y="20" width="303" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                                     <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-Fl-ziN">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-Fl-ziN">
                                 <rect key="frame" x="0.0" y="172" width="375" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zic-II-qBI">
@@ -216,7 +216,7 @@
                                                     <rect key="frame" x="20" y="20" width="303" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAn-xl-Iql">
@@ -255,37 +255,20 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EPr-6K-Rve">
-                                <rect key="frame" x="0.0" y="144" width="375" height="29"/>
-                                <segments>
-                                    <segment title="Tickets"/>
-                                    <segment title="Events"/>
-                                    <segment title="Textbooks"/>
-                                </segments>
-                                <connections>
-                                    <action selector="catagorySegmentSelected:" destination="8rJ-Kc-sve" eventType="valueChanged" id="wZP-zP-vSu"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EPr-6K-Rve" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="9R9-9U-JkC"/>
-                            <constraint firstItem="pwC-Fl-ziN" firstAttribute="top" secondItem="EPr-6K-Rve" secondAttribute="bottom" id="At0-fu-Y0m"/>
                             <constraint firstItem="mEo-TB-8b1" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Cex-0w-Gw8"/>
                             <constraint firstItem="pwC-Fl-ziN" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="IeT-F1-pJ6"/>
                             <constraint firstItem="pwC-Fl-ziN" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Oqw-Nb-AeO"/>
                             <constraint firstItem="mEo-TB-8b1" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="S6F-qy-Cex"/>
-                            <constraint firstItem="EPr-6K-Rve" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Tk9-ep-can"/>
                             <constraint firstItem="mEo-TB-8b1" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="W2P-Hm-2OW"/>
-                            <constraint firstItem="EPr-6K-Rve" firstAttribute="top" secondItem="mEo-TB-8b1" secondAttribute="bottom" id="c50-VJ-SJr"/>
                             <constraint firstItem="pwC-Fl-ziN" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="kO1-fq-nFS"/>
-                            <constraint firstItem="pwC-Fl-ziN" firstAttribute="top" secondItem="EPr-6K-Rve" secondAttribute="bottom" id="sTH-eR-hlf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZbP-cm-MEL"/>
                     <connections>
-                        <outlet property="catagorySegment" destination="EPr-6K-Rve" id="NML-h9-uUk"/>
                         <outlet property="searchBar" destination="mEo-TB-8b1" id="aQE-G2-tE2"/>
                         <outlet property="searchCollectionView" destination="pwC-Fl-ziN" id="XXH-0T-bG0"/>
                     </connections>
@@ -401,7 +384,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwt-1W-zJX">
                                 <rect key="frame" x="16" y="168" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.92824000634517767" green="0.92824000634517767" blue="0.92824000634517767" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -416,7 +399,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-ai-Es5">
                                 <rect key="frame" x="41" y="460" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.9294242262840271" green="0.92938941717147827" blue="0.92941302061080933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -424,7 +407,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="utj-P3-qtt">
                                 <rect key="frame" x="16" y="235" width="343" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.9294242262840271" green="0.92938941717147827" blue="0.92941302061080933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -438,7 +421,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-jG-Vch">
                                 <rect key="frame" x="16" y="527" width="345" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.9294242262840271" green="0.92938941717147827" blue="0.92941302061080933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>

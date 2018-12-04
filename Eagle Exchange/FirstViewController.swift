@@ -16,7 +16,6 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var ticketButton: UIButton!
     @IBOutlet weak var eventsButton: UIButton!
     @IBOutlet weak var textbooksButton: UIButton!
-    @IBOutlet weak var featuredCollectionView: UICollectionView!
     
     var authUI: FUIAuth!
 //    var eagleUser: EagleUser!

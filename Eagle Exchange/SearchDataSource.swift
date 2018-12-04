@@ -12,12 +12,20 @@ class SearchDataSource: NSObject, UICollectionViewDataSource {
     
     var data: Data!
     var datas: Datas! = Datas()
-    private var filteredobjects: [Data] = []
-    private var allListItems: [Data] = []
+    private var filteredobjects: [EventDetail] = []
+    private var allListItems: [EventDetail] = []
     private var isFiltering: Bool = false
     
     func fill() {
-        allListItems = datas.dataArray
+        allListItems = [EventDetail(name: "Ticket for BC vs. BU Hockey Game", seller: "Alex Du", description: "III", price: "15"),
+        EventDetail(name: "Ticket for Creed 2", seller: "Alex Du", description: "III", price: "20"),
+        EventDetail(name: "Gold Pass Rent", seller: "Alex Du", description: "III", price: "15"),
+        EventDetail(name: "Ticket for BC vs. BU Hockey Game", seller: "Alex Du", description: "III", price: "15"),
+        EventDetail(name: "Ticket for Marshmello’s Concert", seller: "Alex Du", description: "III", price: "150"),
+        EventDetail(name: "Justice by Michael Sandal", seller: "Alex Du", description: "III", price: "15"),
+        EventDetail(name: "Fundraising for Chipotle", seller: "Alex Du", description: "III", price: "15"),
+        EventDetail(name: "Anda Curso Elemental", seller: "Alex Du", description: "III", price: "80"),
+        EventDetail(name: "Fundraising for Donuts!", seller: "Alex Du", description: "III", price: "11")]
     }
     
     func filter(searchTerm: String) {
@@ -27,17 +35,17 @@ class SearchDataSource: NSObject, UICollectionViewDataSource {
         } else {
             isFiltering = true
             
-            filteredobjects = datas.dataArray.filter({
+            filteredobjects = allListItems.filter({
                 return $0.name.localizedCaseInsensitiveContains(searchTerm)
             })
         }
     }
     
-    func object(at indexPath: IndexPath) -> Data {
+    func object(at indexPath: IndexPath) -> EventDetail {
         if isFiltering {
             return filteredobjects[indexPath.item]
         } else {
-            return datas.dataArray[indexPath.item]
+            return allListItems[indexPath.item]
         }
     }
     

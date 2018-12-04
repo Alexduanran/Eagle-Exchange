@@ -20,7 +20,7 @@ class SearchPresenter: NSObject, UISearchBarDelegate, UICollectionViewDelegate, 
     }
     
     func fill() {
-        dataSource.fill()
+        
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
