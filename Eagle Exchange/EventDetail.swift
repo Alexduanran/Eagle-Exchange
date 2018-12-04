@@ -9,13 +9,16 @@
 import Foundation
 import Firebase
     
-var ticketListItems: [EventDetail] = []
-var eventsListItems: [EventDetail] = []
-var textbooksListItems: [EventDetail] = []
-var universalListItems: [EventDetail] = []
-var allListsItems: [EventDetail] = ticketListItems + eventsListItems + textbooksListItems
+//var ticketListItems: [EventDetail] = []
+//var eventsListItems: [EventDetail] = []
+//var textbooksListItems: [EventDetail] = []
+//var universalListItems: [EventDetail] = []
+//var allListsItems: [EventDetail] = ticketListItems + eventsListItems + textbooksListItems
 var sellerIndex: Int = 0
+var buyerIndex: Int = 0
 
+var fullName: String = ""
+var uniEmail: String = ""
 
 struct EventDetail {
     var name = ""

@@ -10,11 +10,12 @@
 		0BC3FB44E1089BDC215F15F6 /* Pods_Eagle_Exchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E9BD0728F85D5F26F902E5 /* Pods_Eagle_Exchange.framework */; };
 		AF33E15F21B4A9A5009C6CB5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E15E21B4A9A5009C6CB5 /* Data.swift */; };
 		AF33E16221B4D73B009C6CB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF33E16121B4D73B009C6CB5 /* GoogleService-Info.plist */; };
-		AF33E16621B4FC31009C6CB5 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E16521B4FC31009C6CB5 /* WatchListViewController.swift */; };
 		AF33E16821B5D049009C6CB5 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E16721B5D049009C6CB5 /* SearchPresenter.swift */; };
 		AF33E16A21B5D062009C6CB5 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E16921B5D062009C6CB5 /* SearchDataSource.swift */; };
 		AF33E16C21B5D0FD009C6CB5 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E16B21B5D0FD009C6CB5 /* SearchCell.swift */; };
 		AF33E16E21B6145E009C6CB5 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF33E16D21B6145E009C6CB5 /* Datas.swift */; };
+		AFA789AD21B6F0750069ECAA /* EagleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA789AC21B6F0750069ECAA /* EagleUser.swift */; };
+		AFA789AF21B6F0840069ECAA /* EagleUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA789AE21B6F0840069ECAA /* EagleUsers.swift */; };
 		AFB1870721AE08490032B700 /* IndividualCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB1870621AE08490032B700 /* IndividualCollectionViewCell.swift */; };
 		AFE436BC219E19A800C0DF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436BB219E19A700C0DF18 /* AppDelegate.swift */; };
 		AFE436BE219E19A800C0DF18 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436BD219E19A800C0DF18 /* FirstViewController.swift */; };
@@ -23,7 +24,6 @@
 		AFE436C5219E19A800C0DF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE436C4219E19A800C0DF18 /* Assets.xcassets */; };
 		AFE436C8219E19A800C0DF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE436C6219E19A800C0DF18 /* LaunchScreen.storyboard */; };
 		AFE436D021A10AA600C0DF18 /* CatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436CF21A10AA600C0DF18 /* CatagoryViewController.swift */; };
-		AFE436D221A13A2100C0DF18 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436D121A13A2100C0DF18 /* ThirdViewController.swift */; };
 		AFE436D421A13A8B00C0DF18 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436D321A13A8B00C0DF18 /* ProductViewController.swift */; };
 		AFE436D621A20C1500C0DF18 /* SellerCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436D521A20C1500C0DF18 /* SellerCatagoryViewController.swift */; };
 		AFE436DA21A22F3D00C0DF18 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE436D921A22F3D00C0DF18 /* EventDetail.swift */; };
@@ -34,11 +34,12 @@
 		9FC2067EF6F4D62DCBB1F18B /* Pods-Eagle Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eagle Exchange/Pods-Eagle Exchange.release.xcconfig"; sourceTree = "<group>"; };
 		AF33E15E21B4A9A5009C6CB5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		AF33E16121B4D73B009C6CB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF33E16521B4FC31009C6CB5 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		AF33E16721B5D049009C6CB5 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		AF33E16921B5D062009C6CB5 /* SearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
 		AF33E16B21B5D0FD009C6CB5 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		AF33E16D21B6145E009C6CB5 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		AFA789AC21B6F0750069ECAA /* EagleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleUser.swift; sourceTree = "<group>"; };
+		AFA789AE21B6F0840069ECAA /* EagleUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleUsers.swift; sourceTree = "<group>"; };
 		AFB1870621AE08490032B700 /* IndividualCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFE436B8219E19A700C0DF18 /* Eagle Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eagle Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE436BB219E19A700C0DF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		AFE436C7219E19A800C0DF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE436C9219E19A800C0DF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE436CF21A10AA600C0DF18 /* CatagoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryViewController.swift; sourceTree = "<group>"; };
-		AFE436D121A13A2100C0DF18 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		AFE436D321A13A8B00C0DF18 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		AFE436D521A20C1500C0DF18 /* SellerCatagoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerCatagoryViewController.swift; sourceTree = "<group>"; };
 		AFE436D921A22F3D00C0DF18 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
@@ -109,16 +109,16 @@
 				AFE436BB219E19A700C0DF18 /* AppDelegate.swift */,
 				AF33E16D21B6145E009C6CB5 /* Datas.swift */,
 				AF33E15E21B4A9A5009C6CB5 /* Data.swift */,
+				AFA789AE21B6F0840069ECAA /* EagleUsers.swift */,
+				AFA789AC21B6F0750069ECAA /* EagleUser.swift */,
 				AFE436D921A22F3D00C0DF18 /* EventDetail.swift */,
 				AFE436BD219E19A800C0DF18 /* FirstViewController.swift */,
+				AFE436CF21A10AA600C0DF18 /* CatagoryViewController.swift */,
 				AFE436BF219E19A800C0DF18 /* SecondViewController.swift */,
 				AF33E16721B5D049009C6CB5 /* SearchPresenter.swift */,
 				AF33E16921B5D062009C6CB5 /* SearchDataSource.swift */,
 				AF33E16B21B5D0FD009C6CB5 /* SearchCell.swift */,
-				AFE436D121A13A2100C0DF18 /* ThirdViewController.swift */,
-				AF33E16521B4FC31009C6CB5 /* WatchListViewController.swift */,
 				AFB1870621AE08490032B700 /* IndividualCollectionViewCell.swift */,
-				AFE436CF21A10AA600C0DF18 /* CatagoryViewController.swift */,
 				AFE436D521A20C1500C0DF18 /* SellerCatagoryViewController.swift */,
 				AFE436D321A13A8B00C0DF18 /* ProductViewController.swift */,
 				AFE436C1219E19A800C0DF18 /* Main.storyboard */,
@@ -337,13 +337,13 @@
 				AFE436D621A20C1500C0DF18 /* SellerCatagoryViewController.swift in Sources */,
 				AFE436D021A10AA600C0DF18 /* CatagoryViewController.swift in Sources */,
 				AFE436C0219E19A800C0DF18 /* SecondViewController.swift in Sources */,
+				AFA789AD21B6F0750069ECAA /* EagleUser.swift in Sources */,
 				AF33E16E21B6145E009C6CB5 /* Datas.swift in Sources */,
 				AFE436DA21A22F3D00C0DF18 /* EventDetail.swift in Sources */,
-				AFE436D221A13A2100C0DF18 /* ThirdViewController.swift in Sources */,
 				AFB1870721AE08490032B700 /* IndividualCollectionViewCell.swift in Sources */,
 				AFE436BC219E19A800C0DF18 /* AppDelegate.swift in Sources */,
+				AFA789AF21B6F0840069ECAA /* EagleUsers.swift in Sources */,
 				AF33E16A21B5D062009C6CB5 /* SearchDataSource.swift in Sources */,
-				AF33E16621B4FC31009C6CB5 /* WatchListViewController.swift in Sources */,
 				AFE436BE219E19A800C0DF18 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y46QZ4UM;
 				INFOPLIST_FILE = "Eagle Exchange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +503,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -514,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y46QZ4UM;
 				INFOPLIST_FILE = "Eagle Exchange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,7 +524,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

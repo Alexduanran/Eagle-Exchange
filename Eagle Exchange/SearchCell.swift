@@ -14,7 +14,7 @@ class SearchCell: UICollectionViewCell {
     @IBOutlet weak var individualPriceLabel: UILabel!
     @IBOutlet weak var individualSellerLabel: UILabel!
     
-    func fill(with item: EventDetail) {
+    func fill(with item: Data) {
         individualNameLabel.text = item.name
         individualPriceLabel.text = item.price
         individualSellerLabel.text = item.seller

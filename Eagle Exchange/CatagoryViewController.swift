@@ -14,7 +14,6 @@ class CatagoryViewController: UIViewController {
     
     var datas: Datas!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,17 +28,6 @@ class CatagoryViewController: UIViewController {
             self.individualCollectionView.reloadData()
         }
     }
-    
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == "ShowDetail" {
-    //            let destination = segue.destination as! ProductViewController
-    //            let index = individualCollectionView.indexPath(for: sender as! IndividualCollectionViewCell)!.row
-    //
-    //                destination.nameTextField.text = universalListItems[index].name
-    //                destination.descriptionTextView.text = universalListItems[index].description
-    //                destination.priceTextField.text = universalListItems[index].price
-    //        }
-    //    }
 
 }
 
@@ -54,7 +42,7 @@ extension CatagoryViewController: UICollectionViewDelegate, UICollectionViewData
         
         individualCell.update(with: universalListItem)
         
-        individualCell.contentView.layer.cornerRadius = 2.0
+        individualCell.contentView.layer.cornerRadius = 5.0
         individualCell.contentView.layer.borderWidth = 1.0
         individualCell.contentView.layer.borderColor = UIColor.clear.cgColor
         individualCell.contentView.layer.masksToBounds = true
@@ -76,6 +64,7 @@ extension CatagoryViewController: UICollectionViewDelegate, UICollectionViewData
         productDetail.name = datas.dataArray[indexPath.row].name
         productDetail.descriptionText = datas.dataArray[indexPath.row].description
         productDetail.price = datas.dataArray[indexPath.row].price
+        productDetail.email = datas.dataArray[indexPath.row].email
         self.navigationController?.pushViewController(productDetail, animated: true)
     }
 }

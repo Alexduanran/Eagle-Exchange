@@ -14,18 +14,22 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var publishBarButton: UIBarButtonItem!
     @IBOutlet weak var cancelBarButton: UIBarButtonItem!
     
     var name: String!
     var descriptionText: String!
     var price: String!
+    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         nameTextField.text = name
         descriptionTextView.text = descriptionText
         priceTextField.text = price
+        emailField.text = email
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,6 +37,7 @@ class ProductViewController: UIViewController {
             name = nameTextField.text
             descriptionText = descriptionTextView.text
             price = priceTextField.text
+            email = emailField.text
         }
     }
     

@@ -10,12 +10,14 @@ import UIKit
 
 class SearchDataSource: NSObject, UICollectionViewDataSource {
     
-    private var filteredobjects: [EventDetail] = []
-    private var allListItems: [EventDetail] = []
+    var data: Data!
+    var datas: Datas! = Datas()
+    private var filteredobjects: [Data] = []
+    private var allListItems: [Data] = []
     private var isFiltering: Bool = false
     
     func fill() {
-        allListItems = allListsItems
+        allListItems = datas.dataArray
     }
     
     func filter(searchTerm: String) {
@@ -25,17 +27,17 @@ class SearchDataSource: NSObject, UICollectionViewDataSource {
         } else {
             isFiltering = true
             
-            filteredobjects = allListItems.filter({
+            filteredobjects = datas.dataArray.filter({
                 return $0.name.localizedCaseInsensitiveContains(searchTerm)
             })
         }
     }
     
-    func object(at indexPath: IndexPath) -> EventDetail {
+    func object(at indexPath: IndexPath) -> Data {
         if isFiltering {
             return filteredobjects[indexPath.item]
         } else {
-            return allListItems[indexPath.item]
+            return datas.dataArray[indexPath.item]
         }
     }
     
@@ -43,7 +45,7 @@ class SearchDataSource: NSObject, UICollectionViewDataSource {
         if isFiltering {
             return filteredobjects.count
         } else {
-            return allListItems.count
+            return datas.dataArray.count
         }
     }
     

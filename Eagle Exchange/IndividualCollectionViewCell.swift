@@ -15,6 +15,7 @@ class IndividualCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var individualSellerLabel: UILabel!
     
     var data: Data!
+    //var eagleUser: EagleUser!
     
 //    self.contentView.layer.cornerRadius = 2.0
 //    self.contentView.layer.borderWidth = 1.0

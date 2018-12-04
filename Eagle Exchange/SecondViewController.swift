@@ -12,11 +12,16 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var searchCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var catagorySegment: UISegmentedControl!
     
+    var datas: Datas!
     var presenter: SearchPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buyerIndex = 1
+        datas = Datas()
         
         title = "Search"
         setup()
@@ -38,6 +43,15 @@ class SecondViewController: UIViewController {
         searchCollectionView.reloadData()
     }
     
+    @IBAction func catagorySegmentSelected(_ sender: UISegmentedControl) {
+        if catagorySegment.selectedSegmentIndex == 0 {
+            buyerIndex = 1
+        } else if catagorySegment.selectedSegmentIndex == 1 {
+            buyerIndex = 2
+        } else if catagorySegment.selectedSegmentIndex == 2 {
+            buyerIndex = 3
+        }
+    }
     
 }
 

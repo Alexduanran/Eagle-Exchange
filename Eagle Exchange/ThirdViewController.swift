@@ -24,9 +24,9 @@ class ThirdViewController: UIViewController {
         authUI = FUIAuth.defaultAuthUI()
         super.viewDidLoad()
         
-        if data == nil {
-            data = Data()
-        }
+//        if data == nil {
+//            data = Data(user: <#T##User#>)
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,38 +61,23 @@ class ThirdViewController: UIViewController {
         }
     }
     
-    @IBAction func signOutButtonPressed(_ sender: UIBarButtonItem) {
-        do {
-            try authUI!.signOut()
-            print("^^^ Successfully signed out!")
-            signIn()
-        } catch {
-            print("*** ERROR: Couldn't sign out")
-        }
-    }
     
-    @IBAction func unwindFromProductViewController(segue: UIStoryboardSegue) {
-        let sourceViewController = segue.source as! ProductViewController
-        print(sellerIndex)
-        if sellerIndex == 1 {
-            ticketListItems.append(EventDetail(name: sourceViewController.nameTextField.text!, seller: "Alex", description: sourceViewController.descriptionTextView.text!, price: sourceViewController.priceTextField.text!))
-        } else if sellerIndex == 2 {
-            eventsListItems.append(EventDetail(name: sourceViewController.nameTextField.text!, seller: "Alex", description: sourceViewController.descriptionTextView.text!, price: sourceViewController.priceTextField.text!))
-        } else if sellerIndex == 3 {
-            textbooksListItems.append(EventDetail(name: sourceViewController.nameTextField.text!, seller: "Alex", description: sourceViewController.descriptionTextView.text!, price: sourceViewController.priceTextField.text!))
-        }
-        
-            self.data.name = sourceViewController.nameTextField.text!
-            self.data.description = sourceViewController.descriptionTextView.text!
-            self.data.price = sourceViewController.priceTextField.text!
-            self.data.saveData {success in
-                if success {
-                    print("save data called and it's successful")
-                    self.leaveViewController()
-                } else {
-                    print("*** ERROR: Couldn't leave this view controller because data wasn't saved")
-                }
-            }
-    }
+//    @IBAction func unwindFromProductViewController(segue: UIStoryboardSegue) {
+//        print("*** Unwind working")
+//        let sourceViewController = segue.source as! ProductViewController
+//
+//        self.data.name = sourceViewController.nameTextField.text!
+//        self.data.seller = fullName
+//        print("***\(fullName)")
+//        self.data.description = sourceViewController.descriptionTextView.text!
+//        self.data.price = sourceViewController.priceTextField.text!
+//        self.data.saveData {success in
+//            if success {
+//                self.leaveViewController()
+//            } else {
+//                print("*** ERROR: Couldn't leave this view controller because data wasn't saved")
+//            }
+//        }
+//    }
 }
 
